@@ -15,6 +15,7 @@ const config: Config = {
     extend: {
       colors: {
         trueGray: colors.neutral,
+        "nav_bg_color": "rgba(23,23,23,0.7)",
       },
     },
     fontFamily: {
