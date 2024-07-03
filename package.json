@@ -3,15 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -H 0.0.0.0",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start -p 3000 -H 0.0.0.0"
   },
   "dependencies": {
     "@headlessui/react": "^2.1.1",
     "@heroicons/react": "^2.1.4",
-    "next": "14.2.4",
+    "next": "^14.2.4",
     "next-themes": "^0.3.0",
     "react": "^18",
     "react-dom": "^18",
