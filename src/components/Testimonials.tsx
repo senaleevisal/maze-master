@@ -8,40 +8,38 @@ import userThreeImg from "../../public/img/user3.jpg";
 
 export const Testimonials = () => {
   return (
-    <Container>
-      <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
-        <div className="lg:col-span-2 xl:col-auto">
-          <div className="flex flex-col justify-between w-50 h-30 bg-gray-100 rounded-2xl  dark:bg-trueGray-800">
-
-            <Avatar
-              image={userOneImg}
-              name="Kalum Tharindu"
-              title="Organizing co-ordinator/Batch Representative"
-            />
-          </div>
-        </div>
-        <div className="lg:col-span-2 xl:col-auto">
-          <div className="flex flex-col justify-between w-50 h-30 bg-gray-100 rounded-2xl  dark:bg-trueGray-800">
-
-            <Avatar
-              image={userTwoImg}
-              name="Sawindu Samuditha Jayasinghe"
-              title="Organizing co-ordinator/Batch Representative"
-            />
-          </div>
-        </div>
-        <div className="lg:col-span-2 xl:col-auto">
-          <div className="flex flex-col justify-between w-50 h-30 bg-gray-100 rounded-2xl  dark:bg-trueGray-800">
-
-            <Avatar
-              image={userThreeImg}
-              name="Navodya Dewmini"
-              title="Organizing co-ordinator"
-            />
-          </div>
-        </div>
+  <Container className="lg:col-span-2 xl:col-auto">
+  <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3 px-4 md:px-8 lg:px-12">
+    <div className="lg:col-span-2 xl:col-auto">
+      <div className="flex flex-col justify-between w-full h-full p-5 bg-gray-100 rounded-2xl llg:p-8 dark:bg-trueGray-800">
+        <Avatar
+          image={userOneImg}
+          name="Kalum Tharindu"
+          title="Organizing co-ordinator/Batch Representative"
+        />
       </div>
-    </Container>
+    </div>
+    <div className="lg:col-span-2 xl:col-auto">
+      <div className="flex flex-col justify-between w-full h-full p-5 bg-gray-100 rounded-2xl dark:bg-trueGray-800">
+        <Avatar
+          image={userTwoImg}
+          name="Sawindu Samuditha Jayasinghe"
+          title="Organizing co-ordinator/Batch Representative"
+        />
+      </div>
+    </div>
+    <div className="lg:col-span-2 xl:col-auto">
+      <div className="flex flex-col justify-between w-full h-full p-5 bg-gray-100 rounded-2xl dark:bg-trueGray-800">
+        <Avatar
+          image={userThreeImg}
+          name="Navodya Dewmini"
+          title="Organizing co-ordinator"
+        />
+      </div>
+    </div>
+  </div>
+</Container>
+
   );
 };
 
@@ -53,7 +51,7 @@ interface AvatarProps {
 
 function Avatar(props: Readonly<AvatarProps>) {
   return (
-    <div className="flex items-center  space-x-3">
+    <div className="flex items-center space-x-3 p-4 mx-4">
       <div className="flex-shrink-0 overflow-hidden rounded-l-lg ">
         <Image
           src={props.image}
@@ -61,11 +59,12 @@ function Avatar(props: Readonly<AvatarProps>) {
           height="120"
           alt="Avatar"
           placeholder="blur"
+          className="w-20 h-20 md:w-28 md:h-28 lg:w-32 lg:h-32"
         />
       </div>
       <div>
-        <div className="text-lg font-medium">{props.name}</div>
-        <div className="text-gray-600 dark:text-gray-400">{props.title}</div>
+        <div className="text-sm md:text-base lg:text-lg font-medium">{props.name}</div>
+        <div className="text-xs md:text-sm lg:text-base text-gray-600 dark:text-gray-400">{props.title}</div>
       </div>
     </div>
   );
