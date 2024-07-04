@@ -15,7 +15,7 @@ export const Navbar = () => {
 
   return (
     <div className="w-full">
-      <nav className="container  flex flex-wrap items-center justify-between p-8 mx-auto llg:justify-between xl:px-0 fixed lg:left-20 top-0 z-10 bg-trueGray-900 bg-opacity-50">
+      <nav className="container  flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-0 fixed llg:left-10 top-0 z-10 bg-trueGray-900 bg-opacity-50">
         {/* Logo  */}
         <Disclosure>
           {({ open }) => (
