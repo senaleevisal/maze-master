@@ -20,8 +20,8 @@ export const Testimonials = () => {
             />
           </div>
         </div>
-        <div className="">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
+        <div className="lg:col-span-2 xl:col-auto">
+          <div className="flex flex-col justify-between w-50 h-30 bg-gray-100 rounded-2xl  dark:bg-trueGray-800">
 
             <Avatar
               image={userTwoImg}
@@ -30,8 +30,8 @@ export const Testimonials = () => {
             />
           </div>
         </div>
-        <div className="">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
+        <div className="lg:col-span-2 xl:col-auto">
+          <div className="flex flex-col justify-between w-50 h-30 bg-gray-100 rounded-2xl  dark:bg-trueGray-800">
 
             <Avatar
               image={userThreeImg}
