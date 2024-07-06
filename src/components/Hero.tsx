@@ -16,7 +16,7 @@ export const Hero = () => {
             NIBM Galle proudly presents the second iteration of the Maze Master robotic battle in 2024. This thrilling event features both inter-school and inter-university categories, where two robots engage in fierce combat inside the arena.
             </p>
 
-            <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row hover:scale-110">
+            <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
               <a
                 href="#"
                 target="_blank"
