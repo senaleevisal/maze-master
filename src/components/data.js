@@ -7,27 +7,34 @@ import {
   SunIcon,
 } from "@heroicons/react/24/solid";
 
-import benefitOneImg from "../../public/img/benefit-one.png";
+import benefitOneImg from "../../public/img/team-work.png";
 import benefitTwoImg from "../../public/img/benefit-two.png";
 
 const benefitOne = {
-  title: "Highlight your benefits",
-  desc: "You can use this space to highlight your first benefit or a feature of your product. It can also contain an image or Illustration like in the example along with some bullet points.",
+  title: "Participation Benifits",
+  desc: `
+        Participating in the Maze Master robotic battle
+        competition offers several benefits for school 
+        and university students interested in robotics.
+        `,
   image: benefitOneImg,
   bullets: [
     {
-      title: "Understand your customers",
-      desc: "Then explain the first point breifly in one or two lines.",
+      title: "Skill Development",
+      desc: `
+      Gain hands-on experience in robotics, programming, and engineering
+      `,
       icon: <FaceSmileIcon />,
     },
     {
-      title: "Improve acquisition",
-      desc: "Here you can add the next benefit point.",
+      title: "Teamwork and Collaboration",
+      desc: "Enhance collaboration, communication, and problem-solving skill.",
       icon: <ChartBarSquareIcon />,
     },
     {
-      title: "Drive customer retention",
-      desc: "This will be your last bullet point in this section.",
+      title: "Networking and Exposure",
+      desc: `Connect with peers, mentors, and industry professionals,
+       and explore future career opportunities`,
       icon: <CursorArrowRaysIcon />,
     },
   ],
