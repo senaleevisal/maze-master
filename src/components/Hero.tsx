@@ -3,9 +3,24 @@ import { Container } from "@/components/Container";
 import heroImg from "../../public/img/hero.png";
 import { MdOutlineDocumentScanner } from "react-icons/md";
 
+import { RegisterPopup } from "./RegisterPopup";
+
+const show = () => {
+  const modal = document.getElementById('crypto-modal');
+  if (modal) {
+      modal.classList.remove('hidden');
+      modal.setAttribute('aria-hidden', 'false');
+      modal.setAttribute('aria-modal', 'true');
+  }
+}
+
+
 export const Hero = () => {
   return (
-    <>
+    <div >
+      <div >
+        <RegisterPopup />
+      </div>
       <Container className="flex flex-wrap relative top-10 ">
         <div className="flex items-center w-full lg:w-1/2">
           <div className="max-w-2xl mb-8 px-4 md:px-8 lg:px-16">
@@ -17,13 +32,13 @@ export const Hero = () => {
             </p>
 
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row hover:scale-110">
-              <a
-                href="#"
-                target="_blank"
+              <button
                 rel="noopener"
+                onClick={show}
                 className="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-md ">
                 Register Here
-              </a>
+                
+              </button>
               <a
                 href="#"
                 target="_blank"
@@ -50,6 +65,6 @@ export const Hero = () => {
           </div>
         </div>
       </Container>
-    </>
+    </div>
   );
 };
