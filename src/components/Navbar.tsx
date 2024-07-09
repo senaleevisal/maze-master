@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image"
+
 import { useEffect } from "react";
 import { Hero } from "./Hero";
 
@@ -10,6 +11,7 @@ export const Navbar = () => {
     { name: "About", herf: "#about" },
     { name: "Contact", herf: "#contact" },
     { name: "Gallery", herf: "#gallery" }
+
   ];
 
   return (
@@ -44,6 +46,8 @@ export const Navbar = () => {
                   </Link>
                 </li>
               ))}
+
+
             </ul>
           </div>
         </div>

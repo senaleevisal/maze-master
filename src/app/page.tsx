@@ -7,6 +7,7 @@ import { Video } from "@/components/Video";
 import { Testimonials } from "@/components/Testimonials";
 import { Faq } from "@/components/Faq";
 import { Cta } from "@/components/Cta";
+
 import { Gallery } from "@/components/Gallery"
 
 import { benefitOne, benefitTwo } from "@/components/data";
@@ -38,6 +39,7 @@ export default function Home() {
         </SectionTitle>
         <Gallery />
       </div>
+
       {/* <Faq /> */}
       <Cta />
     </Container>
