@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "vercel-build": "npm run prepare && next build"
+    "vercel-build": "npm run dev && next build"
   },
   "dependencies": {
     "@headlessui/react": "^2.1.1",
