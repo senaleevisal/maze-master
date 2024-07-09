@@ -2,13 +2,16 @@
 import Link from "next/link";
 import Image from "next/image"
 
+import { useEffect } from "react";
+import { Hero } from "./Hero";
+
 export const Navbar = () => {
   const navigation = [
-    { name: "Home", herf: "/" },
-    { name: "About", herf: "/about" },
-    { name: "Awards", herf: "/awards" },
-    { name: "Contact", herf: "/contact" },
-    { name: "Gallery", herf: "/gallery" }
+    { name: "Home", herf: "#home", },
+    { name: "About", herf: "#about" },
+    { name: "Contact", herf: "#contact" },
+    { name: "Gallery", herf: "#gallery" }
+
   ];
 
   return (
@@ -43,9 +46,8 @@ export const Navbar = () => {
                   </Link>
                 </li>
               ))}
-              <li>
-                <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
-              </li>
+
+
             </ul>
           </div>
         </div>
@@ -53,5 +55,9 @@ export const Navbar = () => {
 
     </div>
   );
+}
+
+function isBrowser() {
+  throw new Error("Function not implemented.");
 }
 
