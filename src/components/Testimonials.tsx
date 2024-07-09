@@ -2,8 +2,8 @@ import Image from "next/image";
 import React from "react";
 import { Container } from "@/components/Container";
 
-import userOneImg from "../../public/img/user1.jpg";
-import userTwoImg from "../../public/img/user2.jpg";
+import userOneImg from "../../public/img/user1.png";
+import userTwoImg from "../../public/img/user2.png";
 import userThreeImg from "../../public/img/user3.jpg";
 
 export const Testimonials = () => {
@@ -23,7 +23,7 @@ export const Testimonials = () => {
       <div className="flex flex-col justify-between w-full h-full p-5 bg-gray-100 rounded-2xl dark:bg-trueGray-800">
         <Avatar
           image={userTwoImg}
-          name="Sawindu Samuditha Jayasinghe"
+          name="Sawindu Samuditha"
           title="Organizing co-ordinator/Batch Representative"
         />
       </div>
@@ -51,7 +51,7 @@ interface AvatarProps {
 
 function Avatar(props: Readonly<AvatarProps>) {
   return (
-    <div className="flex items-center space-x-3 p-4 mx-4">
+    <div className="flex items-center space-x-3  ">
       <div className="flex-shrink-0 overflow-hidden rounded-l-lg ">
         <Image
           src={props.image}
@@ -59,7 +59,7 @@ function Avatar(props: Readonly<AvatarProps>) {
           height="120"
           alt="Avatar"
           placeholder="blur"
-          className="w-20 h-20 md:w-28 md:h-28 lg:w-32 lg:h-32"
+          className="w-14 sm:w-full"
         />
       </div>
       <div>
