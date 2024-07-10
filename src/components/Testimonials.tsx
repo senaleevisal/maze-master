@@ -4,7 +4,7 @@ import { Container } from "@/components/Container";
 
 import userOneImg from "../../public/img/user1.png";
 import userTwoImg from "../../public/img/user2.png";
-import userThreeImg from "../../public/img/user3.jpg";
+import userThreeImg from "../../public/img/user3.png";
 
 export const Testimonials = () => {
   return (

@@ -1,5 +1,13 @@
 import React from "react";
 import { Container } from "@/components/Container";
+const show = () => {
+  const modal = document.getElementById('crypto-modal');
+  if (modal) {
+      modal.classList.remove('hidden');
+      modal.setAttribute('aria-hidden', 'false');
+      modal.setAttribute('aria-modal', 'true');
+  }
+}
 
 export const Cta = () => {
   return (
@@ -14,14 +22,13 @@ export const Cta = () => {
           </p>
         </div>
         <div className="flex-shrink-0 w-full text-center lg:w-auto">
-          <a
-            href="https://github.com/web3templates"
-            target="_blank"
+          <button
+            onClick={show}
             rel="noopener"
             className="inline-block py-3 mx-auto text-lg font-medium text-center text-indigo-600 bg-white rounded-md px-7 lg:px-10 lg:py-5 "
           >
             Register Here
-          </a>
+          </button>
         </div>
       </div>
     </Container>

@@ -13,6 +13,9 @@ const show = () => {
       modal.setAttribute('aria-modal', 'true');
   }
 }
+const openPdf = () => {
+  window.open('/Guidelines Version-1.pdf', '_blank');
+}
 
 
 export const Hero = () => {
@@ -39,14 +42,13 @@ export const Hero = () => {
                 Register Here
                 
               </button>
-              <a
-                href="#"
-                target="_blank"
+              <button
+                onClick={openPdf}
                 rel="noopener"
                 className="text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-8 py-5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 me-2 mb-8">
                 
                 <MdOutlineDocumentScanner className="mr-2 h-30 w-30" /> Rules & Regulations
-              </a>
+              </button>
             </div>
           </div>
         </div>
