@@ -22,10 +22,10 @@ export default function Home() {
           Maze Master is a robotic battle competition taking place in 2024, providing opportunities for school and university students interested in robotics. It involves battles between two robots inside an arena.
         </SectionTitle>
       </div>
-      <div id="contact" className="pt-14">
+      <div id="benifits" className="pt-14">
         <Benefits data={benefitOne} />
       </div>
-      <div>
+      <div id="contact" className="pt-14">
         <SectionTitle title="Organizing Team">
         </SectionTitle>
         <Testimonials />
