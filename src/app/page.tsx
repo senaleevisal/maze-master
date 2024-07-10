@@ -3,15 +3,12 @@ import { Container } from "@/components/Container";
 import { Hero } from "@/components/Hero";
 import { SectionTitle } from "@/components/SectionTitle";
 import { Benefits } from "@/components/Benefits";
-import { Video } from "@/components/Video";
 import { Testimonials } from "@/components/Testimonials";
-import { Faq } from "@/components/Faq";
 import { Cta } from "@/components/Cta";
-
 import { Gallery } from "@/components/Gallery"
 
-import { benefitOne, benefitTwo } from "@/components/data";
-import { useRef } from "react";
+import { benefitOne } from "@/components/data";
+
 
 export default function Home() {
 
@@ -28,7 +25,6 @@ export default function Home() {
       <div id="contact" className="pt-14">
         <Benefits data={benefitOne} />
       </div>
-      {/* <Benefits imgPos="right" data={benefitTwo} /> */}
       <div>
         <SectionTitle title="Organizing Team">
         </SectionTitle>
@@ -40,7 +36,6 @@ export default function Home() {
         <Gallery />
       </div>
 
-      {/* <Faq /> */}
       <Cta />
     </Container>
   );

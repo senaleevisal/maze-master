@@ -1,12 +1,11 @@
 {
-  "name": "nextjs-blog",
+  "name": "maze-master",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "vercel-build": "npm run dev && next build"
+    "start": "next start"
   },
   "dependencies": {
     "@headlessui/react": "^2.1.1",
