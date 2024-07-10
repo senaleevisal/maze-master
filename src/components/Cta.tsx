@@ -18,7 +18,7 @@ export const Cta = () => {
             
           </h2>
           <p className="mt-2 font-medium text-white text-opacity-90 lg:text-xl">
-            Get startted with Register
+            Get started with Register
           </p>
         </div>
         <div className="flex-shrink-0 w-full text-center lg:w-auto">
