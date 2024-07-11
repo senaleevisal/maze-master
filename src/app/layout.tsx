@@ -13,6 +13,15 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Maze Master",
   description: "Empower the future, master the maze.",
+  creator: "NIBM",
+  publisher: "NIBM National Institute Of Business Management",
+  applicationName: "Maze Master",
+  keywords: ["Maze-Master","mase-master","Maze Master","maze master","NIBM","nibm"],
+  manifest: "https://maze-master.com",
+  authors: [
+    {url:'https://github.com/senaleevisal',name:"senalee Visal"},
+    {url:'https://github.com/nethsaraPrabash',name:"Nethsara Prabash"}
+  ]
 };
  
 export default function RootLayout({
