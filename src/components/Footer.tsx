@@ -50,7 +50,7 @@ export function Footer() {
               </a>
             </div>
             <div className="max-w-md  text-gray-500 dark:text-gray-400">
-              Organize By HDSE24.1 Batch NIBM Galle.
+              Organized By HDSE24.1 Batch NIBM Galle.
             </div>
           </div>
 
