@@ -9,7 +9,7 @@ const CountDown = () => {
     const [seconds, setSeconds] = useState(0);
 
     useEffect(() => {
-        const targetDate = new Date('2024-09-03T23:59:59'); // Replace with your target date and time
+        const targetDate = new Date('2024-10-03T23:59:59'); // Replace with your target date and time
         const now = new Date();
 
         const timeDifference = targetDate.getTime() - now.getTime();
