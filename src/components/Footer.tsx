@@ -13,7 +13,7 @@ export function Footer() {
             <div>
               {" "}
               <Link
-                href="/"
+                href="https://www.nibm.lk/"
                 className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100"
               >
                 <Image
@@ -50,7 +50,7 @@ export function Footer() {
               </a>
             </div>
             <div className="max-w-md  text-gray-500 dark:text-gray-400">
-              Organize By HDSE24.1 Batch NIBM Galle.
+              Organized By HDSE24.1 Batch NIBM Galle.
             </div>
           </div>
 

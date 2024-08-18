@@ -39,7 +39,7 @@ export const RegisterPopup = () => {
                                 <li>
                                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSfkmCffCdOUeoNuAtJLbV4JSG3n3Gwwl0qzE7G7_c8UQGj22g/viewform" className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
 
-                                        <span className="flex-1 ms-3 whitespace-nowrap">Inter University</span>
+                                        <span className="flex-1 ms-3 whitespace-nowrap">Open category</span>
                                     </a>
                                 </li>
                             </ul>
