@@ -8,6 +8,7 @@ import { Cta } from "@/components/Cta";
 import { Gallery } from "@/components/Gallery"
 
 import { benefitOne } from "@/components/data";
+import CountDown from "@/components/CountDown";
 
 
 export default function Home() {
@@ -17,7 +18,11 @@ export default function Home() {
       <div id="home" className="pt-14">
         <Hero />
       </div>
+      <div className="pt-14 flex flex-col justify-center items-center">
+      <CountDown />
+      </div>
       <div id="about" className="pt-14">
+        
         <SectionTitle title="What is Maze Master ?">
           Maze Master is a robotic battle competition taking place in 2024, providing opportunities for school and university students interested in robotics. It involves battles between two robots inside an arena.
         </SectionTitle>
